@@ -1,0 +1,3 @@
+config_teste:
+  maximo: 10
+  minimo: 1
