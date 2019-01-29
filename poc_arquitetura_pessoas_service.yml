@@ -13,8 +13,8 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
   server:
-    wait-time-in-ms-when-sync-empty: 3000
-    registry-sync-retry-wait-ms: 3000
+    wait-time-in-ms-when-sync-empty: 30000
+    registry-sync-retry-wait-ms: 30000
     registry-sync-retries: 3
     a-sgcache-expiry-timeout-ms: 60000
     eviction-interval-timer-in-ms: 30000
