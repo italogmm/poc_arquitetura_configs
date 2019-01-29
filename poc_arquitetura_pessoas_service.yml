@@ -14,6 +14,8 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
+    registry-sync-retry-wait-ms: 3000
+    registry-sync-retries: 3
 
 spring:
   datasource:
