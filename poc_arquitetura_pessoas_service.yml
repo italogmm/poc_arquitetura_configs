@@ -28,5 +28,11 @@ spring:
       path: /h2
       settings:
         web-allow-others: true
+
+zuul:
+    routes:
+        pessoas:
+            path: /pessoa/**
+            url: http://localhost:9091/pocarquitetura/pessoa
          
         
