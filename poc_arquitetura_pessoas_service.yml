@@ -33,6 +33,6 @@ zuul:
     routes:
         pessoas:
             path: /pessoas/**
-            url: http://localhost:9091/pocarquitetura/pessoas
+            url: http://localhost:9093/pocarquitetura/pessoas
          
         
