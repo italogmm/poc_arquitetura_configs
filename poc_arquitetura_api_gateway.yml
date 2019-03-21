@@ -1,0 +1,29 @@
+server:
+  port: 8765
+
+eureka:
+  instance:
+    hostname: localhost
+    port: 8761
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    eureka-server-connect-timeout-seconds: 60
+  server:
+    wait-time-in-ms-when-sync-empty: 30000
+
+zuul:
+    prefix: /api
+    ignored-services: *
+    routes:
+        pocarquitetura:
+            path: /pocarquitetura/**
+            serviceId: poc_arquitetura_pessoas_service
+
+ribbon:
+    eureka:
+        enabled: true
+
+        
