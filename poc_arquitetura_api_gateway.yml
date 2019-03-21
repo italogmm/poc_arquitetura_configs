@@ -16,7 +16,6 @@ eureka:
 
 zuul:
     prefix: /api
-    ignored-services: *
     routes:
         pocarquitetura:
             path: /pocarquitetura/**
